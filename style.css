@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    color: black;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: antiquewhite;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Eliminar estilo de enlace del título */
+.titulo-link {
+    text-decoration: none; /* Eliminar subrayado */
+    color: inherit; /* Mantener el color original del título */
+}
+
+/* Menu Container */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px; /* Mover los botones más abajo */
+    gap: 100px; /* Aún más separación entre botones */
+    padding: 0 20px;
+}
+
+/* Botones */
+.menu-item {
+    position: relative;
+    text-decoration: none;
+    color: white; /* Texto blanco para contraste */
+    font-size: 3em; /* Botones más grandes */
+    font-weight: bold;
+    text-align: center;
+    width: 350px; /* Botones más grandes */
+    height: 200px; /* Botones más grandes */
+    display: flex;
+    flex-direction: column; /* Para colocar el texto centrado */
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #CC7722; /* Ocre */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.menu-item:hover {
+    transform: scale(1.1); /* Hacer que todo el contenedor crezca */
+    background-color: #995C00; /* Un ocre más oscuro al pasar el ratón */
+}
+
+/* Texto dentro del botón */
+.menu-item span {
+    z-index: 2; /* Asegurarse de que el texto sea visible */
+}
+
+/* Fondo de los botones */
+.menu-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; /* Fondo detrás del texto */
+}

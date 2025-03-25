@@ -1,3 +1,4 @@
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -77,4 +78,9 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 0; /* Fondo detrás del texto */
+}
+
+.titulo_PR {
+    background-color: bisque;
+    border-radius: 3px;
 }

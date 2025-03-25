@@ -1,86 +1,130 @@
-
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* RESET DE ESTILOS */
+* {
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
-    color: black;
+    box-sizing: border-box;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: antiquewhite;
-    color: rgb(0, 0, 0);
+/* BODY */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Blanco */
+    color: #333333; /* Gris oscuro para el texto */
 }
 
+/* NAVBAR */
+.navbar {
+    background-color: #1451ac; /* Azul oscuro */
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    color: #f1c40f; /* Dorado */
+}
+
+.navbar .nav-link {
+    color: #f1c40f; /* Dorado */
+    font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+    color: #ffffff;
+}
+
+/* ESTILOS GENERALES */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* TÍTULOS PRINCIPALES */
 h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1f3a63; /* Azul oscuro */
 }
 
-/* Eliminar estilo de enlace del título */
-.titulo-link {
-    text-decoration: none; /* Eliminar subrayado */
-    color: inherit; /* Mantener el color original del título */
+/* TEXTO */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
 }
 
-/* Menu Container */
-.menu {
-    display: flex;
-    justify-content: center;
-    margin-top: 150px; /* Mover los botones más abajo */
-    gap: 100px; /* Aún más separación entre botones */
-    padding: 0 20px;
-}
-
-/* Botones */
-.menu-item {
-    position: relative;
-    text-decoration: none;
-    color: white; /* Texto blanco para contraste */
-    font-size: 3em; /* Botones más grandes */
+/* BOTONES */
+.btn-custom {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    width: 350px; /* Botones más grandes */
-    height: 200px; /* Botones más grandes */
+    color: #ffffff;
+    background-color: #f1c40f; /* Dorado */
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #598bd5; /* Azul oscuro */
+    transform: scale(1.1); /* Animación de zoom */
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
     display: flex;
-    flex-direction: column; /* Para colocar el texto centrado */
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #CC7722; /* Ocre */
-    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-/* Hover Effects */
-.menu-item:hover {
-    transform: scale(1.1); /* Hacer que todo el contenedor crezca */
-    background-color: #995C00; /* Un ocre más oscuro al pasar el ratón */
-}
-
-/* Texto dentro del botón */
-.menu-item span {
-    z-index: 2; /* Asegurarse de que el texto sea visible */
-}
-
-/* Fondo de los botones */
-.menu-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+form input,
+form textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0; /* Fondo detrás del texto */
 }
 
-.titulo_PR {
-    background-color: bisque;
-    border-radius: 3px;
+form button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #1f3a63; /* Azul oscuro */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f1c40f; /* Dorado */
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn-custom {
+        font-size: 1.2rem;
+        padding: 1.2rem 2rem;
+    }
 }

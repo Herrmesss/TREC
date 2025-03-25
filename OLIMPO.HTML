@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLIMPO GRECOROMANO</title>
+    <title>GRECOROMANO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <a href="#inicio" class="titulo-link">
-            <h1 class="titulo">OLIMPO GRECOROMANO</h1>
-        </a>
-    </header>
-    <main id="inicio">
-        <div class="menu">
-            <!-- Botón de Griego con enlace a griego.html -->
-            <a href="griego.html" class="menu-item">
-                <span>Griego</span>
-            </a>
-            <!-- Botón de Latín con enlace a latin.html -->
-            <a href="latin.html" class="menu-item">
-                <span>Latín</span>
-            </a>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <div class="container">
+            <a class="navbar-brand" href="OLIMPO.HTML">GRECOROMANO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/PAGES/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </main>
+    </nav>
+
+    <!-- CONTENEDOR DE BOTONES -->
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Bienvenidos a GRECOROMANO</h1>
+        <p class="lead">Aquí encontrarás toda la información sobre las lenguas y culturas del Griego y Latín.</p>
+        <p>Este sitio web fue creado para ofrecer un lugar de aprendizaje sobre la lengua griega y latina, abarcando desde el alfabeto, gramática, hasta la literatura y cultura. Además, encontrarás secciones dedicadas al estudio y recursos relacionados.</p>
+        <p>Explora las siguientes secciones para comenzar:</p>
+        <div class="d-flex justify-content-center gap-4">
+            <a href="/PAGES/griego.html" class="btn btn-custom">GRIEGO</a>
+            <a href="/PAGES/latin.html" class="btn btn-custom">LATÍN</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

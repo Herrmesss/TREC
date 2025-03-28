@@ -14,7 +14,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: #1451ac; /* Azul oscuro */
+    background-color: #417fdc; /* Azul oscuro */
 }
 
 .navbar .navbar-brand {
@@ -33,7 +33,7 @@ body {
 
 /* BOTÓN DE CONTACTO EN EL NAVBAR */
 .navbar .contact-btn {
-    background-color: #a1c6ea; /* Azul suave, combina bien con el azul oscuro del navbar */
+    background-color: #15599e; /* Azul suave, combina bien con el azul oscuro del navbar */
     color: #ffffff; /* Color del texto blanco */
     border-radius: 5px; /* Bordes redondeados */
     padding: 10px 20px;
@@ -69,7 +69,7 @@ p {
     color: #555;
 }
 
-/* BOTONES */
+/* BOTONES GENERALES */
 .btn-custom {
     display: inline-block;
     padding: 1.5rem 3rem;
@@ -232,4 +232,28 @@ form button:hover {
     .slider .slides .slide img {
         height: 500px;
     }
+}
+
+/* Estilos específicos para los botones en griego.html */
+.griego-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; /* Color del texto blanco */
+    background-color: #80c5f3; /* Azul suave */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.griego-btn:hover {
+    background-color: #61a8e6; /* Azul más oscuro en hover */
+    transform: scale(1.05); /* Ligero aumento de tamaño al pasar el mouse */
+}
+
+.griego-btn:active {
+    background-color: #4f94d5; /* Azul aún más oscuro al hacer clic */
 }
